@@ -35,7 +35,7 @@ body {
 }
 
 .card span::before {
-  content: "";
+  content: "Hello";
   position: absolute;
   width: 150%;
   height: 40px;
@@ -51,8 +51,14 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card span ::after {
+.card span::after {
   content: "";
   position: absolute;
-  border: 1px solid black;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #4a98bf;
+  z-index: -1;
+  box-shadow: 140px -140px #4a98bf;
 }
